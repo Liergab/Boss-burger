@@ -257,7 +257,7 @@
         }
         
     }
-     .menu-container.hide{
+     .nav-main .menu-container.hide{
         height: 0px;
         border: 0px solid transparent;
     }
