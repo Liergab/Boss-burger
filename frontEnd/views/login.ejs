@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/header.ejs'); %>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <%- include('./partials/nav-bar.ejs'); %>
+
+        <div class="main-log">
+            im log in
+            <% for(let value of data) { %>
+                <div style="color:pink ;"> <%= value %> </div>
+           <% } %>
+        </div>
+ 
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* @import '/style/home.css';
+@import '/style/nav-bar.css';
+@import'/style/product.css';
+@import'/style/contact.css';
+@import'/style/footer.css';
+@import'/style/default.css';  */
+
+@import'../style/home.css';
+@import'../style/default.css';
+@import'../style/nav-bar.css';
+@import'../style/product.css';
+@import'../style/contact.css';
+@import'../style/footer.css';

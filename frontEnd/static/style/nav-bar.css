@@ -1,0 +1,283 @@
+.main .nav-main{
+        margin: 0 100px;
+        grid-row: 1/2;
+        z-index:5 ;
+
+    /* layout */
+    display: flex;
+    align-items: center;
+
+    
+
+}
+
+.main .nav-main .logo-container{
+    flex: 1;
+}
+
+.helpicon{
+    display: none;
+    color: white;
+}
+
+.main .nav-main .menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .nav-main .menu-container .icon {
+    display: flex;
+    align-items: center;
+    margin:auto;
+    padding: 0;
+}
+
+.main .nav-main .menu-container li a{
+    font-size: 25px;
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main .nav-main .menu-container li a::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background:var(--primary);
+  transform: scale(0,1);
+  transition: transform 200ms ease-in;
+}
+.main .nav-main .menu-container li a:hover::after{
+    
+    transform: scale(1,1);
+  }
+
+  .main .nav-main .menu-container li span{
+    display: block;
+    width: 2px;
+    height: 50px;
+    background: var(--primary);
+
+}
+
+.main .nav-main .menu-container li:nth-child(5) a::after,
+.main .nav-main .menu-container li:nth-child(6) a::after{
+   all:unset;
+}
+
+.main  .nav-main .menu-container .icon :nth-child(1) a,
+.main .nav-main .menu-container .icon :nth-child(2) a{
+   margin-right: -10px;
+}
+
+
+/* desktop */
+@media (max-width: 1200px) and (min-width:993px) {
+   
+}
+/* tablet */
+@media (max-width: 992px) and (min-width:769px){
+   .main .nav-main{
+    background-color: black;
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        margin: 0 ;
+
+    }
+    .main .nav-main .logo-container{
+        margin: 0px 50px;
+    }
+
+    .helpicon{
+        display: block;
+        margin: 0px 50px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    
+
+    .main .nav-main .menu-container{
+        position: fixed;
+        height: 200px;
+        width: 100%;
+         top: 83px;
+        margin-left: 0;
+        background: rgba( 0, 0, 0, 0.55 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 20px 20px;
+        /* layout */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-main .menu-container.hide{
+        height: 0px;
+        border: 0px solid transparent;
+    }
+
+    .hide li {
+       display: none;
+    }
+
+    .nav-main .menu-container.show{
+        height: 200px;
+        transition: height, .5s;
+       }
+    
+
+
+    .main .nav-main .menu-container li{
+        margin-bottom: 10px;
+    }
+    
+
+    .main .nav-main .menu-container li span{
+        display: none;
+      
+    }
+    
+}
+/* tablet/ mobile large */
+@media (max-width: 768px) and (min-width:577px){
+
+    .main .nav-main{
+        background-color: black;
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            margin: 0 ;
+    
+        }
+        .main .nav-main .logo-container{
+            margin: 0px 50px;
+        }
+    
+        .helpicon{
+            display: block;
+            margin: 0px 50px;
+            font-size: 30px;
+            font-weight: 400;
+            color: white;
+        }
+
+       
+    
+        .main .nav-main .menu-container{
+            position: fixed;
+            height: 200px;
+            width: 100%;
+            top: 83px;
+            background: rgba( 0, 0, 0, 0.55 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            padding: 20px 40px;
+            /* layout */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-main .menu-container.hide{
+            height: 0px;
+            border: 0px solid transparent;
+        }
+        
+        .hide li{
+            display: none;
+        }
+
+        .nav-main .menu-container.show{
+            height: 200px;
+            transition: height, .5s;
+           }
+        .main .nav-main .menu-container li{
+            margin-bottom: 10px;
+        }
+        
+    
+        .main .nav-main .menu-container li span{
+            display: none;
+          
+        }
+        
+     
+}
+
+/* mobile */
+@media (max-width: 576px){
+
+    .main .nav-main{
+        background-color: black;
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            margin: 0 ;
+    
+        }
+        .main .nav-main .logo-container{
+            margin: 0px 50px;
+        }
+    
+        .helpicon{
+            display: block;
+            margin: 0px 50px;
+            font-size: 30px;
+            font-weight: 400;
+        }
+    
+        .main .nav-main .menu-container{
+            position: fixed;
+            height: 200px;
+            width: 100%;
+            top: 83px;
+            background: rgba( 0, 0, 0, 0.55 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            padding: 20px 40px;
+            /* layout */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 4;
+        }
+        
+    }
+     .menu-container.hide{
+        height: 0px;
+        border: 0px solid transparent;
+    }
+    
+    .hide li{
+        display: none;
+    }
+
+    .nav-main .menu-container.show{
+        height: 200px;
+        transition: height, .5s;
+       }
+        .main .nav-main .menu-container li{
+            margin-bottom: 10px;
+        }
+        
+    
+        .main .nav-main .menu-container li span{
+            display: none;
+          
+        }
+        
+    
