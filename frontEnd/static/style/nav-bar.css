@@ -216,7 +216,7 @@
 }
 
 /* mobile */
-@media (max-width: 576px){
+@media (max-width: 576px) and (min-width: 200px){
 
     .main .nav-main{
         background-color: black;
